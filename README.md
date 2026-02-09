@@ -2,7 +2,6 @@
 
 A smart water quality monitoring system built on Raspberry Pi 5 that continuously measures pH, turbidity, and temperature to detect pollution events. The system classifies water conditions in real time and supports environmental monitoring using low-cost IoT hardware.
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.9+-green.svg)
 ![Platform](https://img.shields.io/badge/platform-Raspberry%20Pi%205-red.svg)
 
