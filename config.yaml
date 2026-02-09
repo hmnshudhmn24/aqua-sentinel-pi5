@@ -1,0 +1,69 @@
+# AquaSentinel-Pi5 Configuration
+
+# System Settings
+system:
+  measurement_interval: 10  # Seconds between readings
+  log_level: INFO
+
+# Database
+database:
+  path: data/aquasentinel.db
+  retention_days: 90
+
+# Sensors
+sensors:
+  pH:
+    channel: 0
+    calibration: {}
+  turbidity:
+    channel: 1
+    calibration: {}
+  temperature:
+    calibration_offset: 0.0
+  indicators:
+    led_red_pin: 22
+    led_green_pin: 27
+    led_blue_pin: 23
+    buzzer_pin: 17
+
+# Water Quality Thresholds
+thresholds:
+  pH:
+    excellent: [6.5, 8.5]
+    good: [6.0, 9.0]
+    fair: [5.5, 9.5]
+  
+  turbidity:
+    excellent: [0, 5]
+    good: [5, 10]
+    fair: [10, 25]
+    poor: [25, 100]
+  
+  temperature:
+    excellent: [15, 25]
+    good: [10, 30]
+    fair: [5, 35]
+
+# Alerts
+alerts:
+  email:
+    enabled: false
+    smtp_server: smtp.gmail.com
+    smtp_port: 587
+    username: your-email@gmail.com
+    password: your-app-password
+    recipients:
+      - alert@example.com
+  
+  sms:
+    enabled: false
+    provider: twilio
+    account_sid: your-sid
+    auth_token: your-token
+    from_number: +1234567890
+    to_numbers:
+      - +0987654321
+  
+  local:
+    buzzer_enabled: true
+    led_enabled: true
