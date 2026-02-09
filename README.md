@@ -1,4 +1,4 @@
-# AquaSentinel-Pi5 💧
+# Aqua Sentinel Pi5 💧
 
 A smart water quality monitoring system built on Raspberry Pi 5 that continuously measures pH, turbidity, and temperature to detect pollution events. The system classifies water conditions in real time and supports environmental monitoring using low-cost IoT hardware.
 
@@ -552,43 +552,3 @@ The system provides REST API endpoints for integration:
 - `GET /api/events` - Pollution events
 - `GET /api/quality` - Water quality index
 
-## 🤝 Contributing
-
-Contributions welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
-## 📄 License
-
-This project is licensed under the MIT License - see [LICENSE](LICENSE) file.
-
-## ⚠️ Disclaimer
-
-This system is designed for monitoring and educational purposes. It is NOT a certified water quality testing system and should NOT be used as the sole basis for water safety decisions. Always follow local regulations and consult with qualified professionals for official water quality assessments.
-
-## 🙏 Acknowledgments
-
-- Raspberry Pi Foundation
-- Open-source sensor communities
-- Environmental monitoring organizations
-- IoT and maker communities
-
-## 📞 Support
-
-- **Issues**: [GitHub Issues](https://github.com/yourusername/aquasentinel-pi5/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/aquasentinel-pi5/discussions)
-- **Email**: support@aquasentinel.example.com
-
-## 🗺️ Roadmap
-
-- [ ] Machine learning for pollution prediction
-- [ ] Mobile app (iOS/Android)
-- [ ] Cloud sync option
-- [ ] Multi-location monitoring
-- [ ] Additional sensors (DO, conductivity, etc.)
-- [ ] Integration with weather data
-- [ ] Automated reporting to authorities
-- [ ] Water quality forecasting
-- [ ] Community water quality network
-
----
-
-Made with 💧 for cleaner water and healthier ecosystems
